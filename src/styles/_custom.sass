@@ -2,18 +2,197 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
-  &-2
-    animation: float1 2.8s ease-in-out infinite alternate
-    position: absolute
-    top: 51%
-    right: 30%
-
+    top: 54%
+    right: 100%
+    left: -35%
 
 @keyframes float1
   0%
-    transform: translateY(20px)
-
+    transform: rotate(0deg)
   100%
-    transform: translateY(0px)
+    transform: rotate(360deg)
+
+// banner interno
+.banner-interno__fondo
+  background-image: url("../assets/curso/portada/fondo-banner-interno.jpg") !important    
+
+.banner-interno__titulo__icono
+  background-color: white !important
+  
+.banner-interno__titulo h2
+  color: white !important 
+
+.banner-principal__img
+  align-self: center
+
+.fondo
+  &-1
+    background-color: #C0EBF6
+  &-2
+    background-color: #DEE4F0
+  &-4
+    background-color: #BFEBF5
+  &-5
+    background-color:#8979F3
+  &-6
+    background-image: url('../assets/curso/tema1/fondo1.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+  &-7
+    background-color: #fff
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+  &-8
+    background-color: #F2F0FD
+  &-9
+    background-image: url('../assets/curso/tema1/fondo3.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+  &-10
+    background-image: url('../assets/curso/tema2/fondo1.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+  &-11
+    background-color: #fff !important
+
+//-bloque de texto
+.bloque-texto-b.fondo-bloque:before
+  background-color: rgba(137, 121, 243, 0.25)
+
+.bloque-texto-b:before
+  content: ''
+  display: block
+  position: absolute
+  top: 40%
+  bottom: 0
+  left: 55%
+  right: 0
+
+//Fuentes
+.fuente-link
+  color: #0b0ff0
+
+.correr-izq
+  margin-left: -25px
+  @media (max-width: 1200px)
+    margin-left: -15px
+  @media (max-width: 991px)
+    margin-left: -5px
+  @media (max-width: 576px)
+    margin-left: -45px
+  @media (max-width: 500px)
+    margin-left: -35px
+  @media (max-width: 400px)
+    margin-left: -15px
+
+.pad1
+  @media (max-width: 576px) and (min-width: 500px)
+    padding-right: 45px !important
+  @media (max-width: 499px) and (min-width: 400px)
+    padding-right: 30px !important
+  @media (max-width: 399px) and (min-width: 300px)
+    padding-right: 12px !important
+
+//acordeon
+.tarjeta.tarjeta--gris.acordion__activo
+  background-color: #E8E8E8 !important
+
+.tarjeta.fondo-8.otrofondo.acordion__activo
+  background-image: url('../assets/curso/tema1/fondo2.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+// cajón
+.cajon.color-primario.fondo-cajon
+  background-color: rgba(4, 177, 217, 0.25)
+
+.cajon.color-primario.fondo-cajon1
+  background-color:#C0EBF6
+
+//listas
+.fa-cube:before
+  content: "\f1b2"
+  color: #210BB7
+
+// cambiar orientación de bloque
+.bloque-texto-g__img.cambioimg
+  width: 50%
+  position: absolute
+  top: 0
+  left: 50%
+  bottom: 0
+  background-position: center
+  background-size: cover
+  @media (max-width: 991px)
+    width: 100%
+    top: 0
+    left: 0
+
+.bloque-texto-g__texto.cambiotexto
+  position: relative
+  width: 70%
+  background-color: rgba(255, 255, 255, 0.95)
+  left: -30%
+  @media (max-width: 991px)
+    position: relative
+    width: 100%
+    left: 0
+
+//- color bloque de texto
+.bloque-texto-a.color-primario
+  background-color: #E8E8E8
+
+.bloque-texto-g__texto
+  width: 70%
+
+//- Tabla C Ancho columna
+.tabla-c td:first-child
+  width: 1% !important
+
+.tabla-c td
+  width: 1%
+
+.bordes
+  border: 2px solid #AFAFAF !important
+
+.borde-der
+  border-right: 2px solid #AFAFAF !important
+
+//- botones de slider
+.slyder-a__btn--sigt
+  border-color: #bebebe !important
+  box-shadow: -2px 2px 2px 2px #b4b4b434 inset !important
+
+.slyder-a__btn--atrs
+  border-color: #bebebe !important
+  box-shadow: -2px 2px 2px 2px #b4b4b434 inset !important
+
+.slyder-a__tipo-a .slyder-a__btn--atrs
+  @media (max-width: 991px)
+    left: -20px !important
+
+.slyder-a__tipo-a .slyder-a__btn--sigt
+  @media (max-width: 991px)
+    right: -20px !important
+
+// línea de tiempo D
+.linea-tiempo-d.color-secundario .linea-tiempo-d__item--selected .linea-tiempo-d__item__content
+  background-image: url('../assets/curso/tema1/fondo3.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+.linea-tiempo-d.color-secundario .linea-tiempo-d__item--selected .linea-tiempo-d__item__number
+  background-color: #05DBF3 !important
+  color: #12263F
+
+//- tabs
+.tabs-a__tab
+  background-color: #E8E8E8
+
+.tabs-a.color-acento-contenido .tabs-a__tab__selected
+  color: #fff !important
